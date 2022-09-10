@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Like = (props) => {
   let classes = "fa fa-heart";
@@ -11,6 +12,10 @@ const Like = (props) => {
       style={{ cursor: "pointer" }}
     ></i>
   );
+};
+
+Like.propTypes = {
+  liked: PropTypes.bool.isRequired,
 };
 
 export default Like;
